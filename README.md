@@ -141,7 +141,7 @@ The generated file contains only the **body** of the LUT logic and is intended
 to be copy-pasted into a Verilog module, for example:
 
 ```verilog
-always @(*) begin
+always @(posedge clk) begin
     case (addr)
         8'd0  : data = 16'h0000;
         8'd1  : data = 16'h0324;
