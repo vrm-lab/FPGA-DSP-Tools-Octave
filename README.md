@@ -110,8 +110,6 @@ Output:
 
 ---
 
-## Additional Tools
-
 ### 4. Sine LUT Generator (Verilog Case Statement)
 
 File: `sine_gen.m`
