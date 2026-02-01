@@ -12,7 +12,7 @@ filename = 'sine_lut_256_body.v';
 fid = fopen(filename, 'w');
 
 fprintf(fid, '// Copy paste bagian ini ke dalam module sine_lut_256\n');
-fprintf(fid, 'always @(*) begin\n');
+fprintf(fid, 'always @(posedge clk) begin\n');
 fprintf(fid, '    case(addr)\n');
 
 for i = 0 : DEPTH-1
@@ -39,4 +39,5 @@ fprintf(fid, '    endcase\n');
 fprintf(fid, 'end\n');
 
 fclose(fid);
+
 fprintf('File generated: %s\n', filename);
